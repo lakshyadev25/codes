@@ -1,0 +1,61 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/lakshyadev25/codes/blob/main/Python%20%20Project\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class BankAccount:\n",
+        "    def _init_(self):\n",
+        "        self.balance = 0\n",
+        "\n",
+        "    def deposit(self, amount):\n",
+        "        self.balance += amount\n",
+        "        print(\"Deposited: {:.2f}\".format(amount))\n",
+        "\n",
+        "    def withdraw(self, amount):\n",
+        "        if amount > self.balance:\n",
+        "            print(\"Insufficient funds\")\n",
+        "        else:\n",
+        "            self.balance -= amount\n",
+        "            print(\"Withdrawn: {:.2f}\".format(amount))\n",
+        "\n",
+        "    def check_balance(self):\n",
+        "        print(\"Balance: {:.2f}\".format(self.balance))\n",
+        "\n",
+        "# Example usage:\n",
+        "account = BankAccount()\n",
+        "account.deposit(1000)\n",
+        "account.withdraw(500)\n",
+        "account.check_balance()"
+      ],
+      "metadata": {
+        "id": "5TGI9Oo-Q9ZY"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
